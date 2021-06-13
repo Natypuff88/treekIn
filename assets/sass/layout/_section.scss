@@ -1,0 +1,212 @@
+
+.section{
+    width: 100%;
+    height: 100%;
+  
+
+    &__box{
+      
+        display: flex;
+    }
+
+    &__description{
+        margin-bottom: 50px;
+
+    }
+
+    &__title{
+      
+        align-content: center;
+        font-size: $xxx-large;
+        font-weight: $bold;
+    }
+
+    &__box{
+       
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    &__box__graph{
+        width: 100%;
+        height: 100%; 
+        display: flex;
+        align-content: center;
+        justify-content: center;
+       
+    }
+
+    &__graph{
+        width: 300px;
+        height: auto; 
+        animation: fadeIn 1.5s ease-in-out infinite alternate;
+    }
+
+
+    &__box__title-dos{
+        font-size: $xx-large;
+        font-weight: $bold;
+        padding-bottom: 50px;
+    }
+
+    &__box__text{
+        font-size: $medium;
+        font-weight: $regular;
+        padding-right: 200px;
+        line-height : 25px;
+    }
+
+    &__prices{
+        width: 100vw;
+        height: 850px;
+        background-image: url("../img/bg-price.svg");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        padding-top: 250px;
+    }
+
+    &__prices__title{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-size: $xx-large;
+        font-weight: $bold;
+        padding-bottom: 50px;
+        color: $white;
+    }
+
+    &__spaceone{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+        width: 100%;
+
+    }
+
+    &__spacetwo{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-start;
+        padding-left: 20px;
+        width: 100%;
+
+    }
+    
+    &__prices__box{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    &__prices__card{
+        border: 1px solid $spanish-gray;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 450px;
+        background-color: $white;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        &:hover{
+            box-shadow: 10px 10px 10px 10px rgba(1, 1, 1, 0.2);
+        }
+
+    }
+
+    &__prices__card-subtitle{
+        font-size: $large;
+        font-weight: $regular;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    &__prices__card-price{
+        font-size: $xx-large;
+        font-weight: $bold;
+    }
+ 
+    &__prices__card-list{
+        height: 230px;
+        width: 100%;
+        margin-left: 20px;
+        line-height : 40px;
+    }
+
+    &__prices__card-item{
+        font-size: $small;
+        font-weight: $regular;
+       
+    }
+
+    &__prices__card-button{
+        height: 40px;
+        background-color: $ball-blue;
+        border: $ball-blue;
+        color: $white;
+    }
+    
+ 
+}
+
+@media only screen and (max-width: 992px){
+.section{ 
+        &__box-two {
+           
+            padding: 50px 30px 0px 30px; 
+            
+        }
+
+        &__box__text{
+            padding-right: 0px;
+        }
+
+        &__box__title-dos{
+            padding-top: 50px;
+        }
+
+        &__prices__box{
+            display: inline;
+            margin: auto;
+            width: 100%;        
+        }  
+        
+        &__spaceone{
+            padding-right: 0px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    
+        &__spacetwo{
+            padding-left: 0px;
+            justify-content: center;
+
+            margin-bottom: 30px;
+        }
+        &__prices{
+           
+            height: 1320px;
+      
+        }
+
+        &__box{
+            margin-bottom: 0px;
+        }
+       
+    }
+ }
+ 
+ 
+ 
+

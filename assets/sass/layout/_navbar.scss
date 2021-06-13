@@ -1,0 +1,178 @@
+.navbar{
+    background-color: $white;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+    width: 100vw;
+    padding: 20px;
+    
+    &__logo{
+       margin-left: 130px;
+       img{ width: 40px;
+            height: 40px;}
+    }
+
+  
+    &__container{
+       width: 100%;
+       display: flex;
+      flex-direction: row;
+       flex-grow: 1;
+    }
+
+    &__list-left{
+      width: 30%;
+       display: flex;
+       justify-content: flex-start;
+       list-style-type: none;
+       flex-grow: 1;
+    
+       a{
+           color: $onyx;
+           font-size: $medium;
+           font-weight: $regular;
+           margin: $cero;
+           
+       }
+       
+    }
+
+    &__list-right{
+         width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        flex-grow: 1;
+        margin-right: 150px;
+        a{
+            color: $onyx;
+            font-size: $medium;
+            font-weight: $regular;
+            margin: $cero;
+        }
+     }
+
+
+     &__item{
+        font-family: $opensans;
+        font-size: $large;
+        font-weight: $regular;
+        margin-left: 20px;
+
+     }
+
+     &__login{
+      background-color: $ball-blue;
+      border: $ball-blue;
+      color: $white;
+      width: auto;
+      padding: 10px;
+      
+      &:hover{
+         background-color: $middle-blue;
+         border: $middle-blue;
+      }
+
+      &:focus{
+         background-color: $spanish-gray;
+         border: $spanish-gray;
+      }
+
+
+      }
+
+      &__button{
+         color: $white !important;
+      }
+}
+
+.collapsible{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+}
+
+.collapsible {
+   label{
+       display: none;
+   }
+}
+
+#menu{
+   display: none;
+}
+
+
+#menu:checked ~ * .navbar__list-left{
+   visibility: visible;
+   height: 100%;
+   overflow: visible !important;
+}
+
+
+@media only screen and (max-width: 992px){
+
+   #menu ~ * .navbar__list-left{
+       visibility: hidden;
+       height: 100%;
+       overflow: visible !important;
+   }
+   
+   .navbar{
+       width: 100%;
+   }
+
+   .collapsible {
+      display: block;
+      width: 100%;
+      text-align: right;
+       label{
+           display: flex;
+           flex-direction: row;
+           justify-content: flex-end;
+           padding-top: 0;
+           padding-bottom: .5em;
+           padding-right: 1.5em;
+           font-size: 1.8rem;
+       }
+
+       }
+
+   .navbar__logo{
+      margin-left: 30px;
+   }
+
+   .navbar__container{
+       height: auto;
+       max-height: 80%;
+       padding: .4em 0 .5em 0;
+   }
+
+   .navbar__list-right{
+      display: none;  
+   }
+
+   .navbar__list-left{
+      width: 100%;
+      background-color: $white;
+      display: block;
+      overflow: hidden;
+     
+   }
+
+   .navbar__item{
+       a{
+           padding: .6em 1em;
+           font-size: 1rem;
+
+       }
+   }
+
+
+}
+
+
+
+

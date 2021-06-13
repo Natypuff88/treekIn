@@ -1,0 +1,51 @@
+.footer{
+   background-color: black;
+   padding: 20px;
+
+
+    &__list{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-start;
+        list-style-type: none;
+        padding-left: 40px;
+
+    }
+
+    &__item{
+        padding: 10px;
+        color: $lavender-gray;
+
+
+    }
+
+    &__small{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-end;
+        color: $lavender-gray;
+        padding-right: 40px;
+        padding-top: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+   .footer{
+
+    &__list{
+        justify-content: center;  
+        padding-left: 0px;
+
+       }
+
+       &__small{
+        justify-content: center;  
+       }
+   }
+
+     }
+     
+     
